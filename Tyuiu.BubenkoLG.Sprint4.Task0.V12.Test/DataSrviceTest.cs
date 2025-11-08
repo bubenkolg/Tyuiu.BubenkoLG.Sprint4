@@ -2,7 +2,7 @@
 using System;
 using Tyuiu.BubenkoLG.Sprint4.Task0.V12.Lib;
 
-namespace Tyuiu.BubenkoLG.Sprint3.Task7.V5.Test
+namespace Tyuiu.BubenkoLG.Sprint4.Task0.V12.Test
 {
     [TestClass]
     public sealed class DataServiceTest
