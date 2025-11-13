@@ -26,7 +26,7 @@ namespace Tyuiu.BubenkoLG.Sprint4.Task4.V2.Lib
                     }
                 }
             }
-            return res;
+            return matrix;
         }
     }
 }
