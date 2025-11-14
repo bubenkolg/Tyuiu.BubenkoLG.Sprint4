@@ -29,15 +29,28 @@ namespace Tyuiu.BubenkoLG.Sprint4.Task7.V17
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* ИСХОДНЫЕ ДАННЫЕ:                                                         ");
             Console.WriteLine("***************************************************************************");
-            Console.WriteLine("* Строка: \"753159864\"                                                    ");
+            Console.WriteLine("* Массив:                                                                  ");
 
             string str = "753159864";
+            int rows = 3;
+            int columns = 3;
+            int[,] array = new int[rows, columns];
 
+            int index = 0;
+            for (int i = 0; i < rows; i++)
+            {
+                for (int j = 0; j < columns; j++)
+                {
+                    Console.Write($"{str[index]} \t");
+                    index++;
+                }
+            }
+            Console.WriteLine();
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* РЕЗУЛЬТАТ:                                                               ");
             Console.WriteLine("***************************************************************************");
 
-            int res = ds.Calculate(3,3,str);
+            int res = ds.Calculate(rows,columns,str);
 
             Console.WriteLine("Количество четных чисел = " + res);
             Console.ReadKey();
